@@ -6,19 +6,19 @@ namespace PassingAndRetrievingDataFromThreads
 
 	class ThreadWithState
 	{
-		private string boilerplate;
-		private int value;
+		private readonly string _boilerplate;
+		private readonly int _value;
 
 		//obtains state information
 		public ThreadWithState(string text, int number)
 		{
-			boilerplate = text;
-			value = number;
+			_boilerplate = text;
+			_value = number;
 		}
 
 		public void ThreadProc()
 		{
-			Console.WriteLine(boilerplate, value);
+			Console.WriteLine(_boilerplate, _value);
 		}
 	}
 
