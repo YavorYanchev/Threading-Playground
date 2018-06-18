@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundAndForegroundThre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingThread", "CreatingThread\CreatingThread.csproj", "{EB5E1639-9336-4A6A-A41E-756CC2FD6128}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingDataToThreads", "PassingDataToThreads\PassingDataToThreads.csproj", "{7813196D-3263-43F1-A5A6-E1C2A35928C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{EB5E1639-9336-4A6A-A41E-756CC2FD6128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB5E1639-9336-4A6A-A41E-756CC2FD6128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB5E1639-9336-4A6A-A41E-756CC2FD6128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7813196D-3263-43F1-A5A6-E1C2A35928C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7813196D-3263-43F1-A5A6-E1C2A35928C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7813196D-3263-43F1-A5A6-E1C2A35928C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7813196D-3263-43F1-A5A6-E1C2A35928C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
