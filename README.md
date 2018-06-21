@@ -49,3 +49,18 @@ task-based asynchronous pattern.
 Можем да сменим thread да се изпълнява в background като променим IsBackground property-то по всяко време.
 
 Background threads са полезни за операции, които трябва да продължат докато приложението работи но не трябва да пречат на приложението да спре, като например monitoring file system changes или incoming socket connections.
+
+
+## Thread Synchronization
+
+Един от плюсовете на използването на няколко threads в приложение е това, че всеки thread се 
+изпълнява асинхронно.
+
+За Windows приложения това позволява бавни задачи да бъдат изпъленени в background докато 
+application window-a и controls останат responsive.
+За сървърни приложения multhithreading позволява да обрабобим всеки идващ request с различен thread.
+В противен случай всеки нов request няма да бъде обработен докато не е минал предния.
+
+Обаче асинхронната природа на thread-овете означава,че достъпът до ресурси като file handles, network connections и памет трябва да бъдат координирани.
+В противен случай,2 или повече thread-a ще достъпят същия ресурс по 1 и също време,всеки без да знае за действието на другия.
+Резултатът е непредвидим data corruption. :(
